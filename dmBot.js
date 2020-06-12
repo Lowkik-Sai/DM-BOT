@@ -14,7 +14,7 @@ dmBot.on("ready", async () => {
 
     console.log(config.READY_MESSAGE);
     dmBot.user.setActivity(config.ACTIVITY_STATUS, {
-        type: "WATCHING"
+        type: "Rock Star Gaming"
     });
 
 });
@@ -27,7 +27,7 @@ dmBot.on("message", (message) => {
         var args = args.slice(0).join(" ")
         var BOT_ID = dmBot.user.id
         var userID = message.author.id
-        if (message.content.startsWith(config.PREFIX)) return message.channel.send(":x: Please use commands in real server! :x:") 
+        if (message.content.startsWith(config.PREFIX)) return message.channel.send(":|: Please use commands in real server! :|:") 
         if (message.author.bot) return;
         message.channel.send("This message has been send to the staff! :incoming_envelope:").then(msg => msg.delete(3000))
         if (message.content.startsWith(config.PREFIX)) return
@@ -73,4 +73,4 @@ dmBot.on("message", (message) => {
 });
 
 
-dmBot.login(config.TOKEN);
+dmBot.login(config.NzE2NjA2NTM0NDAyMDQ4MDQx.XuN_GA.4yfMiWDMwEUld7X8p1XD_7i-lnQ);
